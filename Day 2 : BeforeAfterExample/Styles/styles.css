@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  width: 0;
+  height: 0;
+  position: relative;
+  color: rgb(248, 146, 146);
+  border-left: 10cm solid transparent;
+  border-right: 10cm solid transparent;
+  border-bottom: 10cm solid;
+}
+
+.circle {
+  width: 8.2cm;
+  height: 8.2cm;
+  border-radius: 50%;
+  background: #c2ffff;
+  position: absolute;
+  top: 67px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.circle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5.79cm;
+  height: 5.79cm; 
+  background-color: hsl(53, 88%, 87%); 
+}

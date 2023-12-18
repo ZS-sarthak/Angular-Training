@@ -1,0 +1,53 @@
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+@media only screen and (max-width : 600px) and (min-width:0px){
+  .grid-container{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      overflow-y: scroll;
+  }
+}
+
+@media only screen and (max-width : 900px) and (min-width:601px){
+  .grid-container{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      overflow-y: scroll;
+  }
+}
+
+.grid-container div{
+  margin : 5px;
+  padding : 5px;
+  overflow: hidden;
+  border: 0px solid transparent;
+}
+
+.item{
+  grid-column: auto/span 1;
+  width: 100%-20px;
+  height: 200px;
+  background-color: burlywood;
+}
+
+form{
+  text-align: center;
+  margin : 20px;
+  display: flex;
+}
+
+input[type="submit"]{
+  background-color: rgb(105, 97, 224);
+  margin-left: 2px;
+  width: 50%;
+  height: 30px;
+  border: 0px ;
+}
+
+input{
+  width:100%;
+  height : 20px;
+}

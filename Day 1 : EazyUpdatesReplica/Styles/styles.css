@@ -1,0 +1,133 @@
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+  margin: 105px 0px;
+}
+
+img[alt="EazyUpdates"] {
+  height: 50px;
+  width: 300px;
+}
+
+input[type] {
+  width: 80%;
+  padding: 5%;
+  margin: 5% 0%;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+}
+
+input[type="submit"] {
+  width: 50%;
+  padding: 10px;
+  background-color: #5c8aff;
+  color: white;
+  margin: 8px 0px;
+  border-radius: 4px;
+}
+
+.login-form {
+  margin: auto;
+  width: 30%;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: #f6f5f5;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.left {
+  flex: 50%;
+  text-align: center;
+  color: #ffffff;
+  background-color: #5c8aff;
+}
+
+.left > div {
+  margin: 10% auto;
+  width: 60%;
+  text-align: center;
+}
+
+.details p {
+  font-size: 20px;
+  opacity: 80%;
+}
+
+.left div + img {
+  height: 60%;
+  width: 60%;
+}
+
+.right {
+  flex: 50%;
+  background-color: white;
+}
+
+.right .details {
+  margin: 20% auto 5%;
+  width: 54%;
+  color: #36404a;
+}
+
+.right p {
+  color: #6e747d;
+  text-align: justify;
+}
+
+.right h1 {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  img[alt="EazyUpdates"] {
+    width: 250px;
+  }
+
+  .container {
+    display: block;
+    background-color: #5c8aff;
+  }
+
+  .left > div {
+    margin: 0% auto;
+    padding: 8% 0%;
+  }
+
+  .right {
+    padding-bottom: 8%;
+    background-color: #5c8aff;
+  }
+
+  .right .details {
+    margin: 0% auto;
+    padding: 8% 0%;
+  }
+
+  .right .details,
+  .right p {
+    font-size: 15px;
+    color: #f1f1f1;
+  }
+}
+
+@media (max-width: 1064px) {
+  .right .details {
+    padding-bottom: 10%;
+  }
+  .right h1 {
+    font-size: 20px;
+  }
+
+  .right p {
+    font-size: 14px;
+  }
+}
